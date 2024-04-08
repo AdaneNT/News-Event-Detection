@@ -17,7 +17,7 @@ Representations:
     a. For each fold j=1,...,k:
         I.	Take fold j as the test dataset (each fold, in turn, is used as the test dataset).
         II.	Take the remaining samples/folds together as the training dataset.
-        III.  Generate keywords using KeyBERT/KeyLLM on I and II.
+        III.  Generate keywords using KeyBERT/KeyLLM on each sample (step I and II).
         IV.	Refine and remove duplicated keywords/phrases.
         V.	Represent the generated keywords using LLM embedding.
         VI.	Reduce the size of the embedding via UMAP/t-SNE.
